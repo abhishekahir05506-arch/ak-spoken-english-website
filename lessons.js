@@ -260,42 +260,52 @@ const lessonData = {
       ["Youth", "युवा अवस्था"]
     ]
   },
+// ------------------------------------
+// 4. PRACTICE SENTENCES
+// ------------------------------------
 
-  practice: {
-    title: "Spoken English Practice",
-    subtitle: "केवल हिंदी वाक्य — खुद English बनाइए",
-    items: [
-      "आप कहाँ जा रहे हैं?",
-      "आपका दिन कैसा रहा?",
-      "आपने खाना खा लिया?",
-      "आप कल कहाँ थे?",
-      "आप कब वापस आएँगे?",
-      "मुझे आपसे कुछ कहना है।",
-      "कृपया मेरी बात सुनिए।",
-      "आपको क्या चाहिए?",
-      "आप किसका इंतज़ार कर रहे हैं?",
-      "आपने मुझे क्यों बुलाया?",
-      "मुझे यह काम आज पूरा करना है।",
-      "मैं कल आपसे मिलूँगा।",
-      "क्या आप मेरी मदद कर सकते हैं?",
-      "मुझे इस सवाल का जवाब नहीं पता।",
-      "आप इतनी जल्दी क्यों जा रहे हैं?",
-      "क्या आपने मेरी किताब देखी है?",
-      "मुझे थोड़ी देर आराम करना है।",
-      "कृपया यहाँ बैठ जाइए।",
-      "आपको देर नहीं करनी चाहिए।",
-      "मैं अपनी अंग्रेज़ी सुधारना चाहता हूँ।",
-      "क्या आप मुझे रास्ता बता सकते हैं?",
-      "आज मौसम बहुत अच्छा है।",
-      "मुझे समय पर पहुँचना है।",
-      "आपने यह कैसे किया?",
-      "मैं आपकी बात समझ गया।",
-      "क्या मैं अंदर आ सकता हूँ?",
-      "आपको किस चीज़ की ज़रूरत है?",
-      "मैं अभी व्यस्त हूँ।",
-      "कृपया मुझे बाद में फोन कीजिए।",
-      "हमें रोज़ अभ्यास करना चाहिए।"
-    ]
+lessonData.practice = [
+  { hindi: "मैं रोज़ अंग्रेज़ी पढ़ता हूँ।", english: "I study English every day." },
+  { hindi: "वह स्कूल जाता है।", english: "He goes to school." },
+  { hindi: "वह खाना बना रही है।", english: "She is cooking food." },
+  { hindi: "मैंने अपना काम पूरा कर लिया।", english: "I have finished my work." },
+  { hindi: "हम कल बाज़ार जाएँगे।", english: "We will go to the market tomorrow." },
+  { hindi: "क्या तुम मुझे जानते हो?", english: "Do you know me?" },
+  { hindi: "वह कल नहीं आया था।", english: "He did not come yesterday." },
+  { hindi: "मैं अभी व्यस्त हूँ।", english: "I am busy right now." },
+  { hindi: "कृपया यहाँ बैठिए।", english: "Please sit here." },
+  { hindi: "मुझे आपकी मदद चाहिए।", english: "I need your help." },
+  { hindi: "वह बहुत तेज़ दौड़ता है।", english: "He runs very fast." },
+  { hindi: "हम साथ में पढ़ते हैं।", english: "We study together." },
+  { hindi: "मेरी अंग्रेज़ी बेहतर हो रही है।", english: "My English is getting better." },
+  { hindi: "क्या तुम तैयार हो?", english: "Are you ready?" },
+  { hindi: "मैंने उसे फोन किया।", english: "I called him." },
+  { hindi: "वह किताब पढ़ रहा था।", english: "He was reading a book." },
+  { hindi: "वे क्रिकेट खेलेंगे।", english: "They will play cricket." },
+  { hindi: "मैं पानी पीना चाहता हूँ।", english: "I want to drink water." },
+  { hindi: "यह मेरी किताब है।", english: "This is my book." },
+  { hindi: "मुझे अपना समय बचाना चाहिए।", english: "I should save my time." },
+  { hindi: "वह हर दिन जल्दी उठती है।", english: "She gets up early every day." },
+  { hindi: "हमने फ़िल्म देखी।", english: "We watched a movie." },
+  { hindi: "मैं कल तुमसे मिलूँगा।", english: "I will meet you tomorrow." },
+  { hindi: "क्या तुम मेरी बात समझते हो?", english: "Do you understand me?" },
+  { hindi: "मेरे पास एक नया फोन है।", english: "I have a new phone." },
+  { hindi: "वह घर पर नहीं है।", english: "He is not at home." },
+  { hindi: "कृपया दरवाज़ा खोलिए।", english: "Please open the door." },
+  { hindi: "मुझे अंग्रेज़ी बोलने का अभ्यास करना है।", english: "I need to practise speaking English." },
+  { hindi: "आज बारिश हो रही है।", english: "It is raining today." },
+  { hindi: "मैंने अपना बैग खो दिया।", english: "I lost my bag." },
+  { hindi: "वह बहुत दयालु है।", english: "She is very kind." },
+  { hindi: "हम समय पर पहुँच गए।", english: "We arrived on time." },
+  { hindi: "मुझे यह उत्तर पता है।", english: "I know this answer." },
+  { hindi: "क्या तुम मेरी मदद कर सकते हो?", english: "Can you help me?" },
+  { hindi: "वह दो घंटे से पढ़ रहा है।", english: "He has been studying for two hours." },
+  { hindi: "मैंने खाना खा लिया है।", english: "I have eaten my food." },
+  { hindi: "वे अगले सप्ताह आएँगे।", english: "They will come next week." },
+  { hindi: "मैं हर दिन नए शब्द सीखता हूँ।", english: "I learn new words every day." },
+  { hindi: "उसने मुझे सच बताया।", english: "He told me the truth." },
+  { hindi: "कृपया धीरे बोलिए।", english: "Please speak slowly." } 
+    ];
   }
 };
 
