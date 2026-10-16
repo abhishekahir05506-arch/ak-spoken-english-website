@@ -1,67 +1,41 @@
 
 const lessonData = {
-  daily: [],
-  grammar: {},
-  vocabulary: [],
-  practice: []
-};
-
-// ------------------------------------
-// 1. DAILY USE SENTENCES
-// ------------------------------------
-
-const dailySentences = [
-  ["मैं ठीक हूँ।", "I am fine."],
-  ["आप कैसे हैं?", "How are you?"],
-  ["मेरा नाम राहुल है।", "My name is Rahul."],
-  ["आपका नाम क्या है?", "What is your name?"],
-  ["आप कहाँ रहते हैं?", "Where do you live?"],
-  ["मैं भारत में रहता हूँ।", "I live in India."],
-  ["कृपया मेरी मदद करें।", "Please help me."],
-  ["बहुत-बहुत धन्यवाद।", "Thank you very much."],
-  ["आपका स्वागत है।", "You are welcome."],
-  ["मुझे समझ नहीं आया।", "I did not understand."],
-  ["कृपया फिर से बोलिए।", "Please say it again."],
-  ["धीरे-धीरे बोलिए।", "Please speak slowly."],
-  ["मुझे अंग्रेज़ी सीखनी है।", "I want to learn English."],
-  ["मैं कॉलेज जा रहा हूँ।", "I am going to college."],
-  ["मैं घर जा रहा हूँ।", "I am going home."],
-  ["मुझे भूख लगी है।", "I am hungry."],
-  ["मुझे प्यास लगी है।", "I am thirsty."],
-  ["खाना तैयार है।", "The food is ready."],
-  ["दरवाज़ा खोलिए।", "Open the door."],
-  ["दरवाज़ा बंद कीजिए।", "Close the door."],
-  ["यह बहुत अच्छा है।", "This is very good."],
-  ["मुझे यह पसंद है।", "I like this."],
-  ["मुझे नहीं पता।", "I don't know."],
-  ["कोई बात नहीं।", "No problem."],
-  ["जल्दी कीजिए।", "Hurry up."],
-  ["मुझे थोड़ा समय चाहिए।", "I need some time."],
-  ["आज मौसम अच्छा है।", "The weather is nice today."],
-  ["कल मिलते हैं।", "See you tomorrow."],
-  ["अपना ध्यान रखिए।", "Take care of yourself."],
-  ["मुझे देर हो रही है।", "I am getting late."],
-  ["मैं पढ़ाई कर रहा हूँ।", "I am studying."],
-  ["मैं व्यस्त हूँ।", "I am busy."],
-  ["क्या आप मेरी बात सुन रहे हैं?", "Are you listening to me?"],
-  ["यह कितने का है?", "How much is this?"],
-  ["मुझे पानी चाहिए।", "I need water."],
-  ["मुझे एक पेन दीजिए।", "Please give me a pen."],
-  ["मैं अभी आता हूँ।", "I will be back soon."],
-  ["चिंता मत कीजिए।", "Don't worry."],
-  ["सच बताइए।", "Tell the truth."],
-  ["मुझे माफ़ कीजिए।", "I am sorry."],
-  ["आप सही कह रहे हैं।", "You are right."],
-  ["मैं सहमत हूँ।", "I agree."],
-  ["मैं तैयार हूँ।", "I am ready."],
-  ["चलो चलते हैं।", "Let's go."],
-  ["मुझे थोड़ा आराम करना है।", "I need some rest."],
-  ["लाइट चालू कीजिए।", "Turn on the light."],
-  ["लाइट बंद कीजिए।", "Turn off the light."],
-  ["अपना काम पूरा कीजिए।", "Finish your work."],
-  ["मुझे फोन कीजिए।", "Call me."],
-  ["मैं बाद में बात करूँगा।", "I will talk later."]
-];
+  daily: {
+    title: "Daily Use Sentences",
+    subtitle: "Hindi to English — रोज़ाना बोलने वाले वाक्य",
+    items: [
+      ["आप कैसे हैं?", "How are you?"],
+      ["मैं ठीक हूँ।", "I am fine."],
+      ["आपका नाम क्या है?", "What is your name?"],
+      ["मेरा नाम राहुल है।", "My name is Rahul."],
+      ["आप कहाँ रहते हैं?", "Where do you live?"],
+      ["मैं भारत में रहता हूँ।", "I live in India."],
+      ["आप क्या कर रहे हैं?", "What are you doing?"],
+      ["मैं पढ़ाई कर रहा हूँ।", "I am studying."],
+      ["मुझे समझ नहीं आया।", "I did not understand."],
+      ["कृपया धीरे बोलिए।", "Please speak slowly."],
+      ["मेरी मदद कीजिए।", "Please help me."],
+      ["मुझे थोड़ा समय दीजिए।", "Please give me some time."],
+      ["आप सही कह रहे हैं।", "You are right."],
+      ["मुझे यह पसंद है।", "I like this."],
+      ["मुझे यह नहीं चाहिए।", "I do not want this."],
+      ["आप कहाँ जा रहे हैं?", "Where are you going?"],
+      ["मैं घर जा रहा हूँ।", "I am going home."],
+      ["खाना तैयार है।", "The food is ready."],
+      ["मुझे भूख लगी है।", "I am hungry."],
+      ["मुझे प्यास लगी है।", "I am thirsty."],
+      ["दरवाजा खोलिए।", "Open the door."],
+      ["दरवाजा बंद कीजिए।", "Close the door."],
+      ["चिंता मत कीजिए।", "Do not worry."],
+      ["जल्दी कीजिए।", "Hurry up."],
+      ["कोई बात नहीं।", "No problem."],
+      ["मुझे माफ कीजिए।", "Please forgive me."],
+      ["बहुत अच्छा!", "Very good!"],
+      ["फिर मिलते हैं।", "See you again."],
+      ["मुझे अंग्रेज़ी सीखनी है।", "I want to learn English."],
+      ["मैं रोज़ अभ्यास करता हूँ।", "I practise every day."]
+    ]
+  },
 
 lessonData.daily = [...dailySentences];
 
