@@ -1,16 +1,39 @@
 
 const lessonData = {
-  daily: [],
-  grammar: {},
-  vocabulary: [],
-  practice: []
-};
-
-// ------------------------------------
-// 1. DAILY USE SENTENCES
-// ------------------------------------
-
-const dailySentences = [
+  daily: {
+    title: "Daily Use Sentences",
+    subtitle: "Hindi to English — रोज़ाना बोलने वाले वाक्य",
+    items: [
+      ["आप कैसे हैं?", "How are you?"],
+      ["मैं ठीक हूँ।", "I am fine."],
+      ["आपका नाम क्या है?", "What is your name?"],
+      ["मेरा नाम राहुल है।", "My name is Rahul."],
+      ["आप कहाँ रहते हैं?", "Where do you live?"],
+      ["मैं भारत में रहता हूँ।", "I live in India."],
+      ["आप क्या कर रहे हैं?", "What are you doing?"],
+      ["मैं पढ़ाई कर रहा हूँ।", "I am studying."],
+      ["मुझे समझ नहीं आया।", "I did not understand."],
+      ["कृपया धीरे बोलिए।", "Please speak slowly."],
+      ["मेरी मदद कीजिए।", "Please help me."],
+      ["मुझे थोड़ा समय दीजिए।", "Please give me some time."],
+      ["आप सही कह रहे हैं।", "You are right."],
+      ["मुझे यह पसंद है।", "I like this."],
+      ["मुझे यह नहीं चाहिए।", "I do not want this."],
+      ["आप कहाँ जा रहे हैं?", "Where are you going?"],
+      ["मैं घर जा रहा हूँ।", "I am going home."],
+      ["खाना तैयार है।", "The food is ready."],
+      ["मुझे भूख लगी है।", "I am hungry."],
+      ["मुझे प्यास लगी है।", "I am thirsty."],
+      ["दरवाजा खोलिए।", "Open the door."],
+      ["दरवाजा बंद कीजिए।", "Close the door."],
+      ["चिंता मत कीजिए।", "Do not worry."],
+      ["जल्दी कीजिए।", "Hurry up."],
+      ["कोई बात नहीं।", "No problem."],
+      ["मुझे माफ कीजिए।", "Please forgive me."],
+      ["बहुत अच्छा!", "Very good!"],
+      ["फिर मिलते हैं।", "See you again."],
+      ["मुझे अंग्रेज़ी सीखनी है।", "I want to learn English."],
+      ["मैं रोज़ अभ्यास करता हूँ।", "I practise every day."]
   ["मैं ठीक हूँ।", "I am fine."],
   ["आप कैसे हैं?", "How are you?"],
   ["मेरा नाम राहुल है।", "My name is Rahul."],
