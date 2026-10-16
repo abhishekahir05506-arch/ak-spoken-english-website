@@ -87,42 +87,66 @@ const lessonData = {
   },
 
   grammar: {
-    title: "Grammar & Tenses",
-    subtitle: "English के तीन मुख्य Tenses",
-    items: [
+    title: "Present Tense",
+    description: "Present Tense का प्रयोग वर्तमान समय की आदतों, कामों और घटनाओं के लिए होता है।",
+    forms: [
       {
-        name: "1. Present Tense",
-        detail: "वर्तमान समय में होने वाले काम, आदतों या वर्तमान स्थिति को बताता है।",
-        forms: [
-          ["Simple Present", "आदत या सामान्य सत्य", "Subject + V1 (s/es)", "He plays cricket."],
-          ["Present Continuous", "अभी चल रहा काम", "Subject + am/is/are + V-ing", "She is reading."],
-          ["Present Perfect", "पूरा हो चुका काम", "Subject + has/have + V3", "I have finished my work."],
-          ["Present Perfect Continuous", "पहले शुरू होकर अब तक जारी काम", "Subject + has/have been + V-ing", "I have been studying for two hours."]
-        ]
+        name: "Simple Present",
+        formula: "Subject + V1(s/es) + Object",
+        example: "He plays cricket.",
+        hindi: "वह क्रिकेट खेलता है।"
       },
       {
-        name: "2. Past Tense",
-        detail: "बीते हुए समय में हुए काम या स्थिति को बताता है।",
-        forms: [
-          ["Simple Past", "बीते समय में पूरा काम", "Subject + V2", "She played cricket."],
-          ["Past Continuous", "बीते समय में जारी काम", "Subject + was/were + V-ing", "She was reading."],
-          ["Past Perfect", "बीते समय में दूसरे काम से पहले पूरा काम", "Subject + had + V3", "I had finished my work."],
-          ["Past Perfect Continuous", "बीते समय तक कुछ अवधि से जारी काम", "Subject + had been + V-ing", "I had been studying for two hours."]
-        ]
+        name: "Present Continuous",
+        formula: "Subject + am/is/are + V-ing",
+        example: "She is reading a book.",
+        hindi: "वह किताब पढ़ रही है।"
       },
       {
-        name: "3. Future Tense",
-        detail: "आने वाले समय में होने वाले काम या स्थिति को बताता है।",
-        forms: [
-          ["Simple Future", "भविष्य में होने वाला काम", "Subject + will + V1", "I will study tomorrow."],
-          ["Future Continuous", "भविष्य में जारी रहने वाला काम", "Subject + will be + V-ing", "I will be reading."],
-          ["Future Perfect", "भविष्य के किसी समय तक पूरा काम", "Subject + will have + V3", "I will have finished my work."],
-          ["Future Perfect Continuous", "भविष्य के किसी समय तक जारी काम की अवधि", "Subject + will have been + V-ing", "By noon, I will have been studying for two hours."]
-        ]
+        name: "Present Perfect",
+        formula: "Subject + has/have + V3",
+        example: "I have finished my work.",
+        hindi: "मैंने अपना काम पूरा कर लिया है।"
+      },
+      {
+        name: "Present Perfect Continuous",
+        formula: "Subject + has/have been + V-ing",
+        example: "I have been studying for two hours.",
+        hindi: "मैं दो घंटे से पढ़ रहा हूँ।"
       }
     ]
   },
 
+  past: {
+    title: "Past Tense",
+    description: "Past Tense का प्रयोग बीते हुए समय के कामों और घटनाओं के लिए होता है।",
+    forms: [
+      {
+        name: "Simple Past",
+        formula: "Subject + V2 + Object",
+        example: "He played cricket.",
+        hindi: "उसने क्रिकेट खेला।"
+      },
+      {
+        name: "Past Continuous",
+        formula: "Subject + was/were + V-ing",
+        example: "She was reading a book.",
+        hindi: "वह किताब पढ़ रही थी।"
+      },
+      {
+        name: "Past Perfect",
+        formula: "Subject + had + V3",
+        example: "I had finished my work.",
+        hindi: "मैंने अपना काम पूरा कर लिया था।"
+      },
+      {
+        name: "Past Perfect Continuous",
+        formula: "Subject + had been + V-ing",
+        example: "I had been studying for two hours.",
+        hindi: "मैं दो घंटे से पढ़ रहा था।"
+      }
+    ]
+  },
   vocabulary: {
     title: "Vocabulary",
     subtitle: "English words with Hindi meanings",
