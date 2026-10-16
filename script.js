@@ -31,11 +31,15 @@ function renderPosts() {
     card.append(makeElement("p", "post-date", post.date));
     card.append(makeElement("p", "", post.description));
 
-    if (Array.isArray(post.sentences) && post.sentences.length > 0) {
-      const heading = makeElement("h4", "", "English Sentences with Hindi Meaning");
-      card.append(heading);
+    const details = makeElement("div", "post-details");
+    details.hidden = true;
 
-      const list = makeElement("ol", "sentence-list");
+    if (Array.isArray(post.sentences) && post.sentences.length > 0) {
+      details.append(
+        makeElement("h4", "", "English Sentences with Hindi Meaning")
+      );
+
+      const list = document.createElement("ol");
 
       post.sentences.forEach((sentence) => {
         const item = document.createElement("li");
@@ -44,12 +48,45 @@ function renderPosts() {
         list.append(item);
       });
 
-      card.append(list);
+      details.append(list);
+    } else if (post.category === "Vocabulary") {
+      details.append(
+        makeElement("p", "", "Learn new English words and their Hindi meanings. Practice each word in a sentence every day.")
+      );
+    } else if (post.category === "Knowledge") {
+      details.append(
+        makeElement("p", "", "A computer is an electronic device that accepts data, processes it, and gives information. Learn about hardware, software, input devices and output devices.")
+      );
+    } else {
+      details.append(
+        makeElement("p", "", post.description)
+      );
+      details.append(
+        makeElement("p", "", "Practice these sentences aloud every day to improve your English speaking.")
+      );
     }
 
-    if (post.videoUrl) {
-      const link = makeElement("a", "btn", "Visit YouTube Channel");
-      link.href = post.videoUrl;
+    card.append(details);
+
+    const readButton = makeElement("button", "btn", "Read More");
+    readButton.type = "button";
+    readButton.addEventListener("click", () => {
+      details.hidden = !details.hidden;
+      readButton.textContent = details.hidden ? "Read More" : "Show Less";
+    });
+
+    card.append(readButton);
+
+    // Show Watch Video only when a specific YouTube video URL is provided.
+    const url = post.videoUrl || "";
+    const isSpecificVideo =
+      url.includes("youtu.be/") ||
+      url.includes("youtube.com/watch") ||
+      url.includes("youtube.com/shorts/");
+
+    if (isSpecificVideo) {
+      const link = makeElement("a", "btn", "Watch Video");
+      link.href = url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       card.append(link);
