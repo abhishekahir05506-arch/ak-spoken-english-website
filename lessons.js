@@ -1,5 +1,4 @@
 
-
 const lessonData = {
   daily: {
     title: "Daily Use Sentences",
