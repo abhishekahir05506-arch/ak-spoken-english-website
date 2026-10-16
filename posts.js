@@ -47,5 +47,25 @@ const posts = [
     description:
       "Practice simple English sentences and improve your confidence in everyday conversations.",
     videoUrl: "https://youtube.com/@akspokenenglish-m1p"
+  },
+  {
+    title: "10 Daily Use English Sentences with Hindi Meaning",
+    date: "2026-10-16",
+    category: "Spoken English",
+    description:
+      "Learn 10 daily-use English sentences with easy Hindi meanings.",
+    videoUrl: "https://youtube.com/@akspokenenglish-m1p",
+    sentences: [
+      { hindi: "आप कैसे हैं?", english: "How are you?" },
+      { hindi: "मैं ठीक हूँ।", english: "I am fine." },
+      { hindi: "आप क्या कर रहे हैं?", english: "What are you doing?" },
+      { hindi: "मुझे समझ नहीं आया।", english: "I did not understand." },
+      { hindi: "कृपया मेरी मदद कीजिए।", english: "Please help me." },
+      { hindi: "आपका नाम क्या है?", english: "What is your name?" },
+      { hindi: "मुझे थोड़ा समय दीजिए।", english: "Please give me some time." },
+      { hindi: "मैं अंग्रेज़ी सीख रहा हूँ।", english: "I am learning English." },
+      { hindi: "चिंता मत कीजिए।", english: "Don't worry." },
+      { hindi: "फिर मिलते हैं।", english: "See you again." }
+    ]
   }
 ];
